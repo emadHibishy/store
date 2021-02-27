@@ -1,0 +1,327 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Almarai&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+body{
+    background-color: #f4f4f4;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    /* font-family: Almarai; */
+    font-family: 'Noto Sans JP', sans-serif;
+}
+body > .container{
+    padding-top: 40px;
+}
+h1,h2{
+    color: #5d5d5d;
+    font-weight: bold;
+}
+h2{
+    margin: 3rem;
+}
+/* =======login========= */
+.login {
+    width: 400px;
+    margin: 49px auto;
+    padding: 25px 20px 65px;
+    background-color: #ca2d2d;
+    border-radius: 15px;
+    /* border: 1px solid #ffc107; */
+    box-shadow: rgba(0, 0, 0, 0.24) 3px 5px 7px;
+}
+.login .user{
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 25px;
+}
+.login .user i{
+    font-size: 65px;
+    color: #ffc107;
+}
+.login h2{
+    color: #ffc107;
+    margin-bottom: 30px;
+}
+.login .validate{
+    display: none;
+    border-radius: 5px;
+    background-color: rgb(255, 186, 186);
+    color: #f00;
+    text-align: center;
+    font-size: 1rem;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.login input{
+    margin: 0 auto;
+    direction: ltr;
+}
+.login .form-control{
+    background-color: transparent;
+    border: none;
+    color: #ffc107;
+    font-size: 16px;
+}
+.login .form-control:focus{
+    box-shadow: none;
+}
+span.line{
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #ffc107;
+    margin: 0 auto 35px;
+}
+::-webkit-input-placeholder,
+::placeholder{
+    color: #ffc107 !important;
+    opacity: 1;
+}
+
+/* ==============navbar=========== */
+.dropdown-menu{
+    max-width: 200px;
+    margin-top: 7px;
+    min-width: 11rem;
+    border: none;
+    border-radius: 0 0 0.25rem 0.25rem;
+}
+.nav-link{
+    color: antiquewhite;
+    transition: all 0.5s ease-in-out;
+    font-size: 1.25rem;
+}
+.dropdown-menu .dropdown-item:hover{
+    background-color: transparent;
+}
+.dropdown-menu .nav-link:hover{
+    padding-left: 20px;
+}
+.nav-link:hover{color:#1ee4e7de;}
+.column {
+    height: 48px;
+    border-right: 2px solid #face0b;
+}
+.divider{
+    height: 2px;
+    width: 100%;
+    background-color: #face0b;
+}
+.navbar-toggler{
+    border: 2px solid #ddd;
+}
+.navbar-toggler-icon{
+    background-color: #ddd;
+    display: block;
+    height: 2px;
+    width: 30px;
+    margin: 5px;
+    padding:0 ;
+}
+/* ==============users============ */
+.manage h2{
+    margin: 3rem auto;
+}
+.manage .add-usr{
+    width: 2rem auto;
+}
+.tbl td,
+.tbl th{
+    vertical-align: middle !important;
+}
+.tbl td .btn{
+    margin-bottom: 0.5rem;
+}
+.table-dark:hover{
+    background-color: #343a40 !important;
+}
+.manage .parent,
+.categories .parent,
+.manage-products .parent,
+.manage-comments .parent{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(105, 105, 105, 0.5);
+    z-index: 999;
+}
+.manage .parent .popup,
+.categories .parent .popup,
+.manage-products .parent .popup,
+.manage-comments .parent .popup{
+    text-align: center;
+    width: 45vw;
+    padding: 2rem 1rem;
+    background-color: #eee;
+    border-radius: 5px;
+    border: 1px solid rgba(82, 82, 82, 0.5);
+    box-shadow: 3px 3px 7px #777;
+    margin: 30vh auto;
+}
+input[type="password"]{
+    position: relative;
+}
+.eye-pass{
+    position: absolute;
+    top: 8px;
+    right: 30px;
+}
+.edit,
+.add{
+    margin-top: 50px;
+}
+
+.edit .alert,
+.add .alert,
+.add-product .alert,
+.addCategory .alert,
+.edit-category .alert,
+.edit-comment .alert{
+    text-align: center;
+    padding: 0;
+    border: 0;
+}
+.edit .alert p,
+.add .alert p,
+.addCategory .alert p,
+.edit-category .alert p,
+.add-product .alert p,
+.edit-comment .alert p{
+    padding: 0.7rem;
+}
+/* ==============dashboard========== */
+.dashboard h1{
+    margin-bottom: 30px;
+}
+.btns{
+    margin: 4rem auto 2rem;
+}
+.dashboard .stat{
+    background-color: #eee;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 10px #777;
+    color: #616161;
+}
+.dashboard .stat span{
+    font-size: 3rem;
+    color: #5f5ffd;
+}
+.dashboard .stat a{
+    color: inherit;
+    text-decoration: none;
+}
+.latest__sec{
+    margin-bottom: 2rem;
+}
+.latest .card-header{
+    color: #616161;
+}
+.latest .card-header i{
+    margin-right: 10px;
+}
+.toggle-content{
+    cursor: pointer;
+    color: #777;
+}
+.toggle-content:hover{
+    color: #292929;
+}
+#comm_cntnt .list-group-item{
+    padding: 0 !important;
+    margin-bottom: 1rem;
+
+}
+#comm_cntnt .list-group-item .comment_c{
+    display: inline-block;
+    width: 100px;
+    height: 120px;
+    background-color: #d6d6d6;
+    vertical-align: middle;
+}
+#comm_cntnt .list-group-item .description{
+    display: inline-block;
+    width: calc(100% - 100px);
+    vertical-align: middle;
+    height: 120px;
+    padding: 10px;
+    background-color: #b4d9ff85;
+}
+.latest .card-body li{
+    border: none;
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
+#comm_cntnt .list-group-item .btn{
+    border-radius: 0;
+}
+.latest .card-body li a{
+    color: #fff;
+}
+.latest .card-body:not(#comm_cntnt) li:nth-child(odd){
+    background-color: #ddd;
+}
+.latest .card-body li .btn{
+    padding: 0.25rem 0.75rem;
+}
+.latest .card-body li i{
+    margin-right: 0.5rem;
+}
+.categories .card-header h3 a{
+    color: #343a40;
+}
+.categories .card-header h3 a.active{
+    display: none;
+}
+.categories .card-body{
+    padding: 0;
+}
+.categories hr{
+    margin: 0.5rem 0;
+}
+.categories .category{
+    margin: 0;
+    padding: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+.subCat-name{
+    width: 11rem;
+}
+.categories .category:hover{
+    background-color: #eee;
+}
+.categories .category:last-of-type ~ hr{
+    display: none;
+}
+.categories .category .list-group-item{
+    padding: 0;
+    border: none;
+    background-color: inherit;
+}
+.categories .category > .btn{
+    cursor: default;
+}
+.categories .category .hidden-btns{
+    position: absolute;
+    top: 53px;
+    right: -110px;
+    transition: all 0.5s ease-in-out;
+}
+.categories .category:hover .hidden-btns{
+    right: 20px;
+}
+.categories .category .hidden-btns a{
+    display: block;
+    margin: 10px;
+    padding: 0.25rem 0.5rem;
+}
+/* products */
+.add-product select{
+    height: 3rem;
+}
